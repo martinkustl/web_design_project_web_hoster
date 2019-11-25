@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Balíčky</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="main-container">
+    <header class="main-header">
+      <nav class="main-nav">
+        <span class="mobile-navbar-controls-wrapper">
+          <h1 class="main-nav__header">
+            <a class="main-nav__header--link" href="/">Web hoster</a>
+          </h1>
+          <button class="burger-bar" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+            <i class="fa fa-times close"></i>
+          </button>
+        </span>
+        <ul class="main-nav__items">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="/">Domů</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="packages.html">Balíčky</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="reviews.html"
+              >Hodnocení zákazníků</a
+            >
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="about.html">O nás</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="contact.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <seciton class="packages">
+        <h1 class="packages__header">Balíčky</h1>
+        <article class="package">
+          <h2 class="package__heading">Basic</h2>
+          <h3 class="package__price-heading">Zdarma</h3>
+          <ul class="package__list">
+            <li>PHP 7.3, 7.x, 5.x + MySQL/MariaDB</li>
+            <li>HTTP/2 + Podpora HTTPS</li>
+            <li>10GB Úložiště</li>
+            <li>Přenos dat - 10GB / měsíc</li>
+            <li>Maximálně 1 databáze</li>
+            <li>1 GB pro MySQL</li>
+            <li>2 GB pro emaily</li>
+            <li>DDoS + IDS/IPS ochrana</li>
+            <li>Antivir, Antispam</li>
+          </ul>
+          <div class="order-button__wrapper">
+            <button class="order-button">Objednat</button>
+          </div>
+        </article>
+        <article class="package">
+          <h2 class="package__heading">Advanced</h2>
+          <h3 class="package__price-heading">30Kč/měsíčně</h3>
+          <ul class="package__list">
+            <li>PHP 7.3, 7.x, 5.x + MySQL/MariaDB</li>
+            <li>HTTP/2 + Podpora HTTPS</li>
+            <li>50GB Úložiště</li>
+            <li>Přenos dat - 30GB / měsíc</li>
+            <li>Maximálně 3 databáze</li>
+            <li>1 GB pro MySQL</li>
+            <li>5 GB pro emaily</li>
+            <li>1 alias zdarma</li>
+            <li>DDoS + IDS/IPS ochrana</li>
+            <li>Antivir, Antispam</li>
+          </ul>
+          <div class="order-button__wrapper">
+            <button class="order-button">Objednat</button>
+          </div>
+        </article>
+        <article class="package">
+          <h2 class="package__heading">Pro</h2>
+          <h3 class="package__price-heading">50Kč/měsíčně</h3>
+          <ul class="package__list">
+            <li>PHP 7.3, 7.x, 5.x + MySQL/MariaDB</li>
+            <li>HTTP/2 + Podpora HTTPS</li>
+            <li>Neomezené úložiště</li>
+            <li>Neomezený přenos dat</li>
+            <li>Neomezený počet databází, subdomén, ...</li>
+            <li>2 GB pro MySQL</li>
+            <li>10 GB pro emaily</li>
+            <li>3 aliasy zdarma</li>
+            <li>DDoS + IDS/IPS ochrana</li>
+            <li>Antivir, Antispam</li>
+            <li>Nonstop podpora 24/7/365</li>
+          </ul>
+          <div class="order-button__wrapper">
+            <button class="order-button">Objednat</button>
+          </div>
+        </article>
+      </seciton>
+    </main>
+    <aside class="sponsors">Partneři</aside>
+    <footer class="main-footer">
+      Jedná se o studentský projekt. Autoři: Martin Kustl, Lucie Zvelebilová
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

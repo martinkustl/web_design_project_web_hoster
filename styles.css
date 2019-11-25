@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.main-container {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: fit-content(3.5rem) auto 3rem 3rem;
+  grid-template-areas:
+    'header'
+    'main'
+    'sponsors'
+    'footer';
+  height: 100%;
+}
+
+.main-nav {
+  background-color: #3d0e1e;
+  grid-area: header;
+}
+
+.mobile-navbar-controls-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__header {
+  flex: 1;
+  font-size: 2rem;
+  padding: 14px 16px;
+}
+
+.main-nav__header--link {
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav__header:hover {
+  background-color: #f88020;
+}
+
+.burger-bar {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  padding: 14px 16px;
+}
+.burger-bar:active,
+.burger-bar:focus {
+  outline: none;
+}
+
+.burger-bar:active {
+  background-color: #f88020;
+}
+
+.main-nav__items {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.main-nav__item {
+  display: block;
+}
+
+.main-nav__link {
+  color: white;
+  padding: 14px 16px;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.main-nav__link:hover {
+  background-color: #f88020;
+}
+
+.main-content {
+  grid-area: main;
+  background-color: #fdf6eb;
+  padding: 14px 10px;
+  color: black;
+}
+
+.packages {
+  display: grid;
+  gap: 1rem;
+}
+
+.packages__header {
+  text-align: center;
+}
+
+.package {
+  border: 1px solid #3d0e1e;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.package__heading {
+  color: #d1274b;
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.package__price-heading {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.package__list {
+  text-align: center;
+  list-style: none;
+}
+
+.package__item {
+  padding: 5px;
+}
+
+.order-button__wrapper {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.order-button {
+  font-size: 16px;
+  background-color: #d1274b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.order-button:active,
+.order-button:focus {
+  outline: none;
+}
+
+.order-button:active {
+  background-color: transparent;
+  color: #d1274b;
+  border: 1px solid #d1274b;
+}
+
+h2 {
+  font-size: 1.7rem;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.sponsors {
+  grid-area: sponsors;
+  background-color: #d1274b;
+  line-height: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.main-footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3d0e1e;
+  color: white;
+  padding: 0 16px;
+  text-align: center;
+}
