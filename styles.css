@@ -8,16 +8,29 @@ html {
   height: 100%;
 }
 
+h2 {
+  font-size: 1.7rem;
+  /* margin-bottom: 16px; */
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  /* padding: 10px 0; */
+}
+
 .main-container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: grid;
   grid-template-rows: fit-content(3.5rem) auto 3rem 3rem;
   grid-template-areas:
-    'header'
-    'main'
-    'sponsors'
-    'footer';
+    "header"
+    "main"
+    "sponsors"
+    "footer";
   height: 100%;
 }
 
@@ -87,6 +100,9 @@ html {
   font-size: 1.5rem;
   display: block;
 }
+.main-nav__link--active {
+  background-color: #f88020;
+}
 
 .main-nav__link:hover {
   background-color: #f88020;
@@ -95,16 +111,25 @@ html {
 .main-content {
   grid-area: main;
   background-color: #fdf6eb;
-  padding: 14px 10px;
+  /* padding: 14px 10px; */
+  padding: 20px 5px;
   color: black;
+}
+
+.server-image {
+  width: 100%;
+  height: 15rem;
+  background-size: cover;
+  background: url("https://www.eteknix.com/wp-content/uploads/2013/11/servers.jpg");
 }
 
 .packages {
   display: grid;
   gap: 1rem;
+  margin: 10px 10px;
 }
 
-.packages__header {
+.page__header {
   text-align: center;
 }
 
@@ -112,6 +137,7 @@ html {
   border: 1px solid #3d0e1e;
   border-radius: 10px;
   padding: 10px;
+  background-color: #fde6c0;
 }
 
 .package__heading {
@@ -135,13 +161,18 @@ html {
   padding: 5px;
 }
 
-.order-button__wrapper {
+.center-button__wrapper {
   width: 100%;
-  margin-top: 20px;
   text-align: center;
+  display: block;
 }
 
-.order-button {
+.package__link-wrapper {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.action-element {
   font-size: 16px;
   background-color: #d1274b;
   border: none;
@@ -151,24 +182,82 @@ html {
   border: 1px solid transparent;
 }
 
-.order-button:active,
-.order-button:focus {
-  outline: none;
-}
-
-.order-button:active {
+.action-element:active {
   background-color: transparent;
   color: #d1274b;
   border: 1px solid #d1274b;
 }
 
-h2 {
-  font-size: 1.7rem;
-  margin-bottom: 16px;
+.reviews {
+  display: grid;
+  /* gap: 10px; */
 }
 
-h3 {
-  font-size: 1.3rem;
+.reviews__header {
+  padding-bottom: 20px;
+}
+
+.review {
+  padding: 20px 0;
+  border-top: 1px solid lightgray;
+}
+
+.review:last-of-type {
+  border-bottom: 1px solid lightgray;
+}
+
+.review__header {
+  /* margin-top: 10px; */
+}
+
+.review__post-date {
+  color: grey;
+  padding: 5px 0;
+}
+
+.form-section {
+  padding: 0 20px;
+}
+
+.signup-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.signup-form__required {
+  color: #d1274b;
+}
+
+.signup-form__label {
+  font-size: 1rem;
+}
+
+.signup-form__input {
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0 5px;
+  background-color: #fde6c0;
+  border: 1px solid #3d0e1e;
+}
+
+.terms-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#terms {
+  margin-right: 5px;
+}
+
+.signup-form__button {
+  font-size: 1rem;
+  background-color: #d1274b;
+}
+
+.signup-form__button:active,
+.signup-form__button:focus {
+  outline: none;
 }
 
 .sponsors {

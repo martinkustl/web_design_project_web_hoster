@@ -37,8 +37,8 @@
             >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="about.html"
-              >O nás</a
+            <a class="main-nav__link main-nav__link--active" href="order.html"
+              >Objednat hosting</a
             >
           </li>
           <li class="main-nav__item">
@@ -48,29 +48,59 @@
       </nav>
     </header>
     <main class="main-content">
-      <article>
-        <h1 class=".page__header">O nás</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          omnis minima ab quo. Eligendi expedita illo fuga, minus ea nam
-          assumenda iure quis dolore libero quam quasi culpa consectetur itaque
-          ipsam? Illo quos voluptas nam in. Vitae rerum vero quas unde obcaecati
-          ipsum soluta. Maxime, natus rerum? Ad, quo officiis vero beatae,
-          delectus soluta nam accusantium esse ut facere eius eum corporis
-          aperiam earum quos dolor et, illum sit repudiandae at quasi.
-          Cupiditate ab deserunt saepe? Maiores necessitatibus velit
-          reprehenderit aliquam in fuga beatae facere, minima asperiores nulla
-          iure libero quo? Tenetur reiciendis doloribus esse in optio architecto
-          deleniti necessitatibus.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ducimus
-          alias, cum beatae quidem maiores mollitia tempore, autem quibusdam
-          iusto sit corrupti odit repellat placeat aut culpa? Quas voluptatibus
-          dolorum ratione, aliquam alias iure quasi dolorem soluta nesciunt
-          nostrum tempora.
-        </p>
-      </article>
+      <section class="form-section">
+        <h1>Prosím vytvořte účet</h1>
+        <form class="signup-form">
+          <label class="signup-form__label" for="name"
+            >Uživatelské jméno
+            <span class="signup-form__required">*</span></label
+          >
+          <input
+            class="signup-form__input"
+            id="name"
+            placeholder="uživatelské jméno"
+            required
+          />
+          <label class="signup-form__label" for="email"
+            >E-mail <span class="signup-form__required">*</span></label
+          >
+          <input
+            class="signup-form__input"
+            id="email"
+            placeholder="e-mail"
+            type="email"
+            required
+          />
+          <label class="signup-form__label" for="password"
+            >Uživatelské jméno
+            <span class="signup-form__required">*</span></label
+          >
+          <input
+            class="signup-form__input"
+            id="password"
+            placeholder="heslo"
+            type="password"
+            required
+          />
+          <div class="terms-wrapper">
+            <input
+              class="signup-form__input"
+              id="terms"
+              type="checkbox"
+              required
+            />
+            <label class="signup-form__label" for="terms">
+              Souhlasím se smluvními podmínkami
+              <span class="signup-form__required">*</span></label
+            >
+          </div>
+          <div class="center-button__wrapper">
+            <button class="signup-form__button action-element" type="submit">
+              Vytvořit
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
     <aside class="sponsors">Partneři</aside>
     <footer class="main-footer">
