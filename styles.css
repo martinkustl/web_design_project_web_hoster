@@ -22,21 +22,26 @@ p {
 }
 
 .main-container {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   display: grid;
   grid-template-rows: fit-content(3.5rem) auto 3rem 3rem;
   grid-template-areas:
-    'header'
-    'main'
-    'partners'
-    'footer';
+    "header"
+    "main"
+    "partners"
+    "footer";
   height: 100%;
 }
 
-.main-nav {
-  background-color: #3d0e1e;
+.main-header {
   grid-area: header;
+  background-color: #3d0e1e;
+}
+
+.main-nav {
+  /* grid-area: header;
+  background-color: #3d0e1e; */
 }
 
 .mobile-navbar-controls-wrapper {
@@ -121,7 +126,7 @@ p {
   background-size: cover;
   /* background: url('https://www.eteknix.com/wp-content/uploads/2013/11/servers.jpg') */
   /* center / cover no-repeat; */
-  background: url('hands.png') center / cover no-repeat;
+  background: url("hands.png") center / cover no-repeat;
   position: relative;
   /* display: flex;
   justify-content: center;
@@ -138,7 +143,6 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
-  /* padding: 15px; */
   text-align: center;
   border-radius: 10px;
 }
@@ -176,9 +180,14 @@ p {
 
 .packages {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.packages__heading {
+  grid-column: span 3;
 }
 
 .page__heading {
@@ -202,6 +211,7 @@ p {
   border-radius: 10px;
   padding: 10px;
   background-color: #fde6c0;
+  grid-column: span 3;
 }
 
 .package__heading {
@@ -285,12 +295,16 @@ p {
 
 .form-section {
   padding: 0 20px;
+  flex: 1;
 }
 
 .signup-form {
   display: grid;
   gap: 10px;
   margin-top: 10px;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .signup-form__required {
@@ -345,4 +359,62 @@ p {
   color: white;
   padding: 0 16px;
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  .main-header {
+    grid-area: header;
+    background-color: #3d0e1e;
+    height: 6rem;
+  }
+
+  .main-nav__link {
+    color: white;
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.5rem;
+    display: block;
+    padding: 0 20px;
+  }
+
+  .mobile-navbar-controls-wrapper {
+    display: none;
+  }
+
+  .main-nav__items {
+    display: flex;
+  }
+
+  .hosting-features__heading {
+    padding-bottom: 15px;
+  }
+
+  .hosting-features__items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hosting-features__item {
+    padding: 0 20px;
+  }
+
+  .main-content--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .packages {
+    /*  margin: 0 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .package {
+    border: 1px solid #3d0e1e;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fde6c0;
+    grid-column: span 1;
+  }
 }

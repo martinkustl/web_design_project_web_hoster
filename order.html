@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
   <body class="main-container">
     <header class="main-header">
       <nav class="main-nav">
-        <span class="mobile-navbar-controls-wrapper">
+        <div class="mobile-navbar-controls-wrapper">
           <h1 class="main-nav__header">
             <a class="main-nav__header--link" href="/">Web hoster</a>
           </h1>
@@ -37,7 +37,7 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
             <i class="fa fa-times close" aria-hidden="true"></i>
           </button>
-        </span>
+        </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
             <a class="main-nav__link" href="/">Domů</a>
@@ -61,7 +61,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
+    <main class="main-content main-content--center">
       <section class="form-section">
         <h1 class="page__heading padding">Prosím vytvořte účet</h1>
         <form class="signup-form">
@@ -73,6 +73,7 @@
             class="signup-form__input"
             id="name"
             placeholder="uživatelské jméno"
+            name="Uživatelské jméno"
             required
           />
           <label class="signup-form__label" for="email"
