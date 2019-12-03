@@ -17,7 +17,7 @@
         "@context": "http://schema.org",
         "@type": "WebSite",
         "description": "webhosting website",
-        "name": "Web hoster",
+        "name": "Webhoster",
         "url": "https://example.com"
       }
     </script>
@@ -26,9 +26,11 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="mobile-navbar-controls-wrapper">
-          <h1 class="main-nav__header">
-            <a class="main-nav__header--link" href="/">Web hoster</a>
-          </h1>
+          <a class="main-nav__heading-link" href="index.html">
+            <h1 class="main-nav__heading">
+              Webhoster
+            </h1>
+          </a>
           <button
             class="burger-bar"
             onclick="toggleNavbar()"
@@ -40,18 +42,18 @@
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="/">Domů</a>
+            <a class="main-nav__link main-nav__link--active" href="index.html"
+              >Domů</a
+            >
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="packages.html">Balíčky</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="reviews.html"
-              >Hodnocení zákazníků</a
-            >
+            <a class="main-nav__link" href="reviews.html">Hodnocení</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="order.html">Objednat hosting</a>
+            <a class="main-nav__link" href="order.html">Objednat</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="contact.html">Kontakt</a>
@@ -61,48 +63,59 @@
     </header>
     <main class="main-content">
       <div title="decorative-image" class="home-image">
-        <h1 class="home-image__text">Společně k úspěchu</h1>
+        <h2 class="home-image__text">Společně k úspěchu</h2>
       </div>
-      <!-- Pouze dekorativní -->
+      <!-- Pouze dekorativní obrázek -->
       <article class="brief-intro">
-        <h2 class="brief-intro__heading">Hosting s dlouholetou praxí</h2>
-        <p>
+        <h2 class="student-project__text">! Jedná se o studentský projekt !</h2>
+        <h1 class="brief-intro__heading">Hosting s dlouholetou praxí</h1>
+        <p class="margin-bottom">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
           possimus placeat cum quisquam officia dolore quia ipsum architecto
           natus earum odio hic, quae nostrum enim, ut, expedita quo amet
           quibusdam sint vero repellendus! Aliquid sapiente similique neque ea
           vitae amet?
         </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore
+          omnis dicta consectetur et dignissimos minima blanditiis in ipsam
+          dolor. Voluptas ipsam eum in quibusdam dolore perspiciatis, placeat
+          error sit sint suscipit veritatis, vitae minima, corporis labore
+          laboriosam eveniet voluptatum facilis praesentium non voluptate esse!
+          Deleniti laudantium tempora explicabo enim. Eligendi dolorem, dolores,
+          nobis molestias atque, eos itaque sit ea repellendus labore tempore
+          non!
+        </p>
       </article>
       <section class="hosting-features__section margin-bottom">
         <h2 class="hosting-features__heading ">Proč zvolit nás</h2>
         <ul class="hosting-features__items">
           <li class="hosting-features__item">
-            <img
-              src="server-icon.png"
-              class="hosting-features__image"
-              alt="ikonka serveru"
-            />
+            <div
+              class="hosting-features__image hosting-features__image--server"
+              title="dekorativní obrázek serveru"
+            ></div>
+            <!-- Pouze dekorativní obrázek -->
             <p>
               Nejnovější technologie
             </p>
           </li>
           <li class="hosting-features__item">
-            <img
-              src="customers.png"
-              class="hosting-features__image"
-              alt="ikonka zákazníků"
-            />
+            <div
+              class="hosting-features__image hosting-features__image--customers"
+              title="dekorativní obrázek zákazníků"
+            ></div>
+            <!-- Pouze dekorativní obrázek -->
             <p>
               402 213 spokojených zákazníků
             </p>
           </li>
           <li class="hosting-features__item">
-            <img
-              src="security.png"
-              class="hosting-features__image"
-              alt="ikonka bezpečnosti"
-            />
+            <div
+              class="hosting-features__image hosting-features__image--security"
+              title="dekorativní obrázek bezpečnosti"
+            ></div>
+            <!-- Pouze dekorativní obrázek -->
             <p>
               Bezpečnost a spolehlivost
             </p>
@@ -110,7 +123,38 @@
         </ul>
       </section>
     </main>
-    <aside class="partners">Partneři</aside>
+    <aside class="partners">
+      <h3>Partneři</h3>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <a href="https://www.czu.cz/cs/" target="_blank">
+            <img
+              src="./images/czu.png"
+              alt="logo ČZU"
+              class="partners__image"
+            />
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="https://www.pef.czu.cz/cs/" target="_blank">
+            <img
+              src="./images/pef.jpg"
+              alt="logo PEF"
+              class="partners__image"
+            />
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="https://kit.pef.czu.cz/" target="_blank">
+            <img
+              src="./images/kit.png"
+              alt="logo KIT"
+              class="partners__image"
+            />
+          </a>
+        </li>
+      </ul>
+    </aside>
     <footer class="main-footer">
       Jedná se o studentský projekt. Autoři: Martin Kustl, Lucie Zvelebilová
     </footer>

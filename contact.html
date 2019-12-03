@@ -16,7 +16,7 @@
         "@context": "http://schema.org",
         "@type": "WebSite",
         "description": "webhosting website",
-        "name": "Web hoster",
+        "name": "Webhoster",
         "url": "https://example.com"
       }
     </script>
@@ -24,7 +24,7 @@
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": "http://www.t-mobile.com",
+        "url": "http://www.example.com",
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -40,9 +40,11 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="mobile-navbar-controls-wrapper">
-          <h1 class="main-nav__header">
-            <a class="main-nav__header--link" href="/">Web hoster</a>
-          </h1>
+          <a class="main-nav__heading-link" href="index.html">
+            <h1 class="main-nav__heading">
+              Webhoster
+            </h1>
+          </a>
           <button
             class="burger-bar"
             onclick="toggleNavbar()"
@@ -54,18 +56,16 @@
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/">Domů</a>
+            <a class="main-nav__link" href="index.html">Domů</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="packages.html">Balíčky</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="reviews.html"
-              >Hodnocení zákazníků</a
-            >
+            <a class="main-nav__link" href="reviews.html">Hodnocení</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="order.html">Objednat hosting</a>
+            <a class="main-nav__link" href="order.html">Objednat</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active" href="contact.html"
@@ -75,23 +75,63 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <section>
+    <main class="main-content main-content--padding">
+      <section class="contacts__section">
         <h1 class="page__heading padding">Kontaktní údaje</h1>
-        <ul class="contacts__list">
+        <ul class="contacts__items">
           <li class="contacts__item">
             tel: +420 102 203 323
           </li>
           <li class="contacts__item">
-            email: hoster@hoster.com
+            email: podpora@webhoster.com
           </li>
           <li class="contacts__item">
-            facebook, twitter, instagram
+            <a href="#" class="contacts__link contacts__link--facebook">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              Facebook
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link contacts__link--instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              Instagram
+            </a>
           </li>
         </ul>
       </section>
     </main>
-    <aside class="partners">Partneři</aside>
+    <aside class="partners">
+      <h3>Partneři</h3>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <a href="https://www.czu.cz/cs/" target="_blank">
+            <img
+              src="./images/czu.png"
+              alt="logo ČZU"
+              class="partners__image"
+            />
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="https://www.pef.czu.cz/cs/" target="_blank">
+            <img
+              src="./images/pef.jpg"
+              alt="logo PEF"
+              class="partners__image"
+            />
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="https://kit.pef.czu.cz/" target="_blank">
+            <img
+              src="./images/kit.png"
+              alt="logo KIT"
+              class="partners__image"
+            />
+          </a>
+        </li>
+      </ul>
+    </aside>
     <footer class="main-footer">
       Jedná se o studentský projekt. Autoři: Martin Kustl, Lucie Zvelebilová
     </footer>

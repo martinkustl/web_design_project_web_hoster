@@ -17,7 +17,7 @@
         "@context": "http://schema.org",
         "@type": "WebSite",
         "description": "webhosting website",
-        "name": "Web hoster",
+        "name": "Webhoster",
         "url": "https://example.com",
         "contactPoint": [
           {
@@ -44,6 +44,30 @@
               "url": "https://example/product#1.com",
               "name": "Basic",
               "description": "Základní balíček pro webhosting",
+              "brand": {
+                "@type": "Organization",
+                "name": "Webhoster"
+              },
+              "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "6",
+                  "bestRating": "10",
+                  "worstRating": "1"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Uživatel 1"
+                }
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "8.6",
+                "reviewCount": "5",
+                "bestRating": "10",
+                "worstRating": "1"
+              },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "CZK",
@@ -62,6 +86,30 @@
               "name": "Advanced",
               "url": "https://example/product#2.com",
               "description": "Advanced balíček pro webhosting",
+              "brand": {
+                "@type": "Organization",
+                "name": "Webhoster"
+              },
+              "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "8",
+                  "bestRating": "10",
+                  "worstRating": "1"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Uživatel 6"
+                }
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "9",
+                "reviewCount": "3",
+                "bestRating": "10",
+                "worstRating": "1"
+              },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "CZK",
@@ -80,6 +128,30 @@
               "name": "Pro",
               "url": "https://example/product#3.com",
               "description": "Pro balíček pro webhosting",
+              "brand": {
+                "@type": "Organization",
+                "name": "Webhoster"
+              },
+              "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "7.2",
+                  "bestRating": "10",
+                  "worstRating": "1"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Uživatel 8"
+                }
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "9",
+                "reviewCount": "6",
+                "bestRating": "10",
+                "worstRating": "1"
+              },
               "offers": {
                 "@type": "Offer",
                 "priceCurrency": "CZK",
@@ -98,9 +170,11 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="mobile-navbar-controls-wrapper">
-          <h1 class="main-nav__header">
-            <a class="main-nav__header--link" href="/">Web hoster</a>
-          </h1>
+          <a class="main-nav__heading-link" href="index.html">
+            <h1 class="main-nav__heading">
+              Webhoster
+            </h1>
+          </a>
           <button
             class="burger-bar"
             onclick="toggleNavbar()"
@@ -112,7 +186,7 @@
         </div>
         <ul class="main-nav__items">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/">Domů</a>
+            <a class="main-nav__link" href="index.html">Domů</a>
           </li>
           <li class="main-nav__item">
             <a
@@ -122,12 +196,10 @@
             >
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="reviews.html"
-              >Hodnocení zákazníků</a
-            >
+            <a class="main-nav__link" href="reviews.html">Hodnocení</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="order.html">Objednat hosting</a>
+            <a class="main-nav__link" href="order.html">Objednat</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="contact.html">Kontakt</a>
@@ -135,10 +207,10 @@
         </ul>
       </nav>
     </header>
-    <main class="main-content main-content--center">
+    <main class="main-content main-content--padding">
       <section class="packages">
         <h1 class="page__heading packages__heading">Balíčky</h1>
-        <article class="package">
+        <section class="package">
           <h2 class="package__heading">Basic</h2>
           <h3 class="package__price-heading">Zdarma</h3>
           <ul class="package__list">
@@ -155,8 +227,8 @@
           <div class="center-button__wrapper package__link-wrapper">
             <a href="order.html" class="action-element">Objednat</a>
           </div>
-        </article>
-        <article class="package">
+        </section>
+        <section class="package">
           <h2 class="package__heading">Advanced</h2>
           <h3 class="package__price-heading">30Kč/měsíčně</h3>
           <ul class="package__list">
@@ -174,8 +246,8 @@
           <div class="center-button__wrapper package__link-wrapper">
             <a href="order.html" class="action-element">Objednat</a>
           </div>
-        </article>
-        <article class="package">
+        </section>
+        <section class="package">
           <h2 class="package__heading">Pro</h2>
           <h3 class="package__price-heading">50Kč/měsíčně</h3>
           <ul class="package__list">
@@ -194,10 +266,41 @@
           <div class="center-button__wrapper package__link-wrapper">
             <a href="order.html" class="action-element">Objednat</a>
           </div>
-        </article>
+        </section>
       </section>
     </main>
-    <aside class="partners">Partneři</aside>
+    <aside class="partners">
+      <h3>Partneři</h3>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <a href="https://www.czu.cz/cs/" target="_blank">
+            <img
+              src="./images/czu.png"
+              alt="logo ČZU"
+              class="partners__image"
+            />
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="https://www.pef.czu.cz/cs/" target="_blank">
+            <img
+              src="./images/pef.jpg"
+              alt="logo PEF"
+              class="partners__image"
+            />
+          </a>
+        </li>
+        <li class="partners__item">
+          <a href="https://kit.pef.czu.cz/" target="_blank">
+            <img
+              src="./images/kit.png"
+              alt="logo KIT"
+              class="partners__image"
+            />
+          </a>
+        </li>
+      </ul>
+    </aside>
     <footer class="main-footer">
       Jedná se o studentský projekt. Autoři: Martin Kustl, Lucie Zvelebilová
     </footer>
